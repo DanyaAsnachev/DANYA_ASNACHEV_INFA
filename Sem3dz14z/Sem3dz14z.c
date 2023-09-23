@@ -2,24 +2,22 @@
 
 #define MAX 100
 
-void assign(float A[MAX][MAX], float B[MAX][MAX], int n)
+void assign(int A[MAX][MAX], int B[MAX][MAX], int n)
 {
-	float k;
-	printf("A");
 	for (int i = 0; i < n; ++i)
 	{
 		for (int j = 0; j < n; ++j)
 		{
-			k = B[i][j];
-			A[i][j] = k;
-			printf("%i", A[i][j]);
+			A[i][j] = B[i][j];
+			printf("%i ", A[i][j]);
 		}
+		printf("\n");
 	}
 }
 
 int main()
 {
-	float A[MAX][MAX], B[MAX][MAX];
+	int A[MAX][MAX], B[MAX][MAX];
 	int n;
 	scanf("%i", &n);
 	for (int i = 0; i < n; ++i)
@@ -36,5 +34,6 @@ int main()
 			scanf("%i", &B[i][j]);
 		}
 	}
+
 	assign(A, B, n);
 }
