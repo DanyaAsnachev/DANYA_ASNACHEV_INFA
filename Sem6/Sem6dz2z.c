@@ -49,16 +49,16 @@ int main()
 	char* p6 = &str[0];
 	printf("%s\n", str);
 	p6[0] = toupper(p6[0]);
-    p6[7] = toupper(p6[7]);
-    for (int i = 0; i < 11; ++i)
-    {
-    	p6[i] = toupper(p6[i]);
-    }
-    printf("%s\n", str);
-    int a7 = 1234;
-    int* p7 = &a7;
-    int** q7= &p7;
-    **q7 = 2 * a7;
-    printf("%i\n", a7);
+    	p6[7] = toupper(p6[7]);
+    	for (int i = 0; i < 11; ++i)
+    	{
+    		p6[i] = toupper(p6[i]);
+    	}
+    	printf("%s\n", str);
+    	int a7 = 1234;
+    	int* p7 = &a7;
+    	int** q7= &p7;
+    	**q7 = 2 * a7;
+    	printf("%i\n", a7);
 
 }
